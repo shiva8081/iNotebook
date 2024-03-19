@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { Navbar } from './components/Navbar';
 import {  Routes, Route, BrowserRouter } from 'react-router-dom';
 import Notestate from './context/notes/Notestate';
+import { Alert } from './components/Alert';
 
 function App() {
   return (
@@ -12,10 +13,14 @@ function App() {
     <Notestate>
       <BrowserRouter>
       <Navbar/>
+      <Alert message="this is amazing"/>
+      <div className='container'>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      </div> 
     </BrowserRouter>
     </Notestate>
       

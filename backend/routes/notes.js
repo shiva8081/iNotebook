@@ -17,6 +17,7 @@ router.get('/fetchallnotes', fetchuser, async (req, res) => {
 })
 
 
+
 // ROUTE 2: add notes: POST "/api/notes/addnotes". Login required
 
 router.post('/addnotes', fetchuser, [
