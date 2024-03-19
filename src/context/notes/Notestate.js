@@ -57,16 +57,17 @@ const Notestate = (props) => {
     //ADD a note
 const addNote=(title,description,tag)=>{
 //todo api call
-    note={
-        "_id": "65f841babc997d4d2a84e023c",
+console.log('adding a new note')
+    const note={
+        "_id": "65f841babcd997d4d2a84e023c",
         "user": "65f5de4828195cc3e1a08c8e",
-        "title": " adding function",
-        "description": "note added",
-        "tag": "yoylo",
+        "title": title,
+        "description": description,
+        "tag": tag,
         "date": "2024-03-18T13:29:30.962Z",
         "__v": 0
     };
-setnotes(notes.push(note))
+setnotes(notes.concat(note))
 }
 
     //delete a note
