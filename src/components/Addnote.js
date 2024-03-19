@@ -24,8 +24,8 @@ export const Addnote = () => {
 
                 <form>
                     <div className="mb-3">
-                        <label htmlFor="Title" className="form-label">Title</label>
-                        <input type="text" className="form-control" id="exampleInputEmail1" name="Title" onChange={onChange} aria-describedby="emailHelp" />
+                        <label htmlFor="title" className="form-label">Title</label>
+                        <input type="text" className="form-control" id="exampleInputEmail1" name="title" onChange={onChange} aria-describedby="emailHelp" />
                         <div id="emailHelp" className="form-text"></div>
                     </div>
                     <div className="mb-3">

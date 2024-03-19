@@ -72,11 +72,24 @@ setnotes(notes.concat(note))
 
     //delete a note
 const deleteNote=(id)=>{
-    
+    //todo api call
+    console.log("deleting the node with id:"+id)
+    const newnote = notes.filter((note)=>{return note._id!==id})
+
+    setnotes(newnote);
 }
 
     //edit a note
-    const editNote=(id)=>{
+    const editNote=(id,title,description,tag)=>{
+        for (let index = 0; index < notes.length; index++) {
+            const element = notes[index];
+            if(element.id===id){
+                element.title=title;
+                element.description=description;
+                element.tag=tag;
+            }
+            
+        }
     
     }
 
