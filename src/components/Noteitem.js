@@ -7,7 +7,7 @@ export const Noteitem = (props) => {
     const context = useContext(noteContext);
     const {deleteNote} = context;
     const {editNote} = context;
-   const {note}=props;
+   const {note ,updateNote}=props;
   return (
     <div className='col-md-3'>
         
@@ -17,7 +17,7 @@ export const Noteitem = (props) => {
     <div className='d-flex aligh-item-center'>
     <h5 className="card-title">{note.title}</h5>
     <FontAwesomeIcon icon={faTrash} className='mx-2 pointer' onClick={()=>{deleteNote(note._id)}} />
-    <FontAwesomeIcon icon={faPenToSquare} className='mx-2 pointer' />
+    <FontAwesomeIcon icon={faPenToSquare} className='mx-2 pointer 'onClick={()=>{updateNote(note)}} />
     </div>
     <p className="card-text">{note.description}</p>
     
