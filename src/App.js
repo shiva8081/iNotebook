@@ -6,6 +6,8 @@ import { Navbar } from './components/Navbar';
 import {  Routes, Route, BrowserRouter } from 'react-router-dom';
 import Notestate from './context/notes/Notestate';
 import { Alert } from './components/Alert';
+import { Signup } from './components/Signup';
+import { Login } from './components/Login';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       </div> 
     </BrowserRouter>
