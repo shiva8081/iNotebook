@@ -4,13 +4,14 @@ import { Notes } from './Notes'
 
 
 
-export const Home = () => {
+export const Home = (props) => {
 
-  
+  const {ssalert}=props;
   return (
+    
     <>
    
-    <Notes/>
+    <Notes ssalert={ssalert} />
     </>
   )
 }
