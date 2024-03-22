@@ -38,7 +38,7 @@ export const Signup = (props) => {
         setcredential({ ...credential, [e.target.name]: e.target.value })
     }
     return (
-        <div className='conatianer'>
+        <div className='conatianer'><h1 className='mt-5'>create tour account</h1>
             <form onSubmit={handleSubmit}>
             <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">Name</label>

@@ -36,8 +36,9 @@ export const Login = (props) => {
         setcredential({ ...credential, [e.target.name]: e.target.value })
     }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div >
+            <h1 className='mt-5'>LOG-IN PAGE</h1>
+            <form onSubmit={handleSubmit} className='mt-5'>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email address</label>
                     <input type="email" className="form-control" value={credential.email} id="email" onChange={onChange} name="email" aria-describedby="emailHelp" />

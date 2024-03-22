@@ -9,8 +9,9 @@ export const About = () => {
     //     // eslint-disable-next-line
     //  }, []);
     return (
-        <div>
-            this is about 
+        <div className='mt5'>
+          <h1 className='mt-5'> this project is created by shiva yadav</h1>
+         
         </div>
     )
 }
